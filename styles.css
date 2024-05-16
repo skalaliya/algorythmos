@@ -46,7 +46,7 @@ section {
 
 /* Hero section styling */
 .hero {
-    background: url('day_of_dead_background.jpg') no-repeat center center/cover;
+    background: url('background.jpg') no-repeat center center/cover;
     height: 400px; /* Fixed height for hero image */
     color: white;
     display: flex;
@@ -54,6 +54,7 @@ section {
     justify-content: center; /* Horizontally center content */
     text-align: center;
 }
+
 
 .hero-content {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
