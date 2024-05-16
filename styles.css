@@ -33,6 +33,15 @@ nav ul li a {
     text-decoration: none; /* Removes underline from links */
     font-weight: bold; /* Makes font bold */
 }
+#about {
+    background: url('about_background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#contact {
+    background: url('contact_background.jpg') no-repeat center center/cover;
+    color: white;
+}
 
 /* Main content styling */
 main {
