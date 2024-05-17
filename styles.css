@@ -7,10 +7,6 @@ body, html {
     font-family: 'Roboto', sans-serif;
     background: radial-gradient(circle, #0a0f0b 0%, #000000 60%, #434343 100%);
 }
-.hero {
-    background: #fdcc04;
-}
-
 body::before {
     content: "";
     position: fixed;
