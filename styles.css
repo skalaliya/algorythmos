@@ -20,6 +20,28 @@ body::before {
     pointer-events: none; /* Allows click events to pass through */
     z-index: -1; /* Keeps the background behind all content */
 }
+}
+
+.hero {
+    /* existing background and layout styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: radial-gradient(circle, #0a0f0b 0%, #000000 60%, #434343 100%);
+}
+
+/* Specific text styles for hero section */
+.hero h2 {
+    font-size: 36px; /* Larger text for heading */
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 18px; /* Readable text size for paragraph */
+    color: #cccccc;
+}
 
 /* Header Styles */
 header {
