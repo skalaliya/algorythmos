@@ -2,11 +2,11 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure minimum height is full viewport */
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-    font-family: 'Roboto', sans-serif; /* Consistent font throughout the site */
-    background: radial-gradient(circle, #0a0f0b 0%, #282828 50%, #0a0f0b 100%); /* Updated background gradient */
-    color: #f4f4f4; /* Light text color for contrast against the dark background */
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #0a0f0b 0%, #282828 50%, #0a0f0b 100%);
+    color: #f4f4f4;
 }
 
 body::before {
@@ -18,14 +18,13 @@ body::before {
     height: 100%;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 10 10"><circle fill="%23ffffff" cx="5" cy="5" r="1"></circle></svg>');
     background-repeat: repeat;
-    opacity: 0.06; /* Subtle opacity for a refined look */
-    pointer-events: none; /* Allows click events to pass through */
-    z-index: -1; /* Ensures the background is behind all content */
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: -1;
 }
 
-/* Header Styles */
 header {
-    background-color: #222; /* Slightly lighter dark background for the header */
+    background-color: #222;
     color: white;
     padding: 10px 20px;
     position: fixed;
@@ -34,7 +33,6 @@ header {
     z-index: 1000;
 }
 
-/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -52,9 +50,8 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Main Content Area */
 main {
-    padding-top: 80px; /* Increased padding to accommodate fixed header */
+    padding-top: 80px;
 }
 
 section {
@@ -62,9 +59,8 @@ section {
     margin-bottom: 20px;
 }
 
-/* Specific Section Styles */
-.gallery, .videos, .about, .services, .contact {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent light background for visibility */
+.about, .services, .contact {
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 50px;
@@ -72,7 +68,6 @@ section {
     text-align: center;
 }
 
-/* Image Grids and Galleries */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -91,7 +86,6 @@ section {
     transform: scale(1.1);
 }
 
-/* Carousel Styles */
 .carousel {
     position: relative;
     width: 100%;
@@ -120,7 +114,6 @@ section {
 #prev { left: 10px; }
 #next { right: 10px; }
 
-/* Footer Styles */
 footer {
     text-align: center;
     background-color: #222;
