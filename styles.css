@@ -3,10 +3,11 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%; /* Ensure minimum height is full viewport */
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
-    background: radial-gradient(circle, #0a0f0b 0%, #000000 60%, #434343 100%);
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    font-family: 'Roboto', sans-serif; /* Consistent font throughout the site */
+    background: radial-gradient(circle, #0a0f0b 0%, #000000 60%, #434343 100%); /* Background gradient */
 }
+
 body::before {
     content: "";
     position: fixed;
@@ -16,31 +17,9 @@ body::before {
     height: 100%;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 10 10"><circle fill="%23ffffff" cx="5" cy="5" r="1"></circle></svg>');
     background-repeat: repeat;
-    opacity: 0.4; /* Adjust opacity as needed for visibility */
+    opacity: 0.4; /* Adjust opacity for better visibility */
     pointer-events: none; /* Allows click events to pass through */
-    z-index: -1; /* Keeps the background behind all content */
-}
-}
-
-.hero {
-    /* existing background and layout styles */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    background: radial-gradient(circle, #0a0f0b 0%, #000000 60%, #434343 100%);
-}
-
-/* Specific text styles for hero section */
-.hero h2 {
-    font-size: 36px; /* Larger text for heading */
-    color: #ffffff;
-}
-
-.hero p {
-    font-size: 18px; /* Readable text size for paragraph */
-    color: #cccccc;
+    z-index: -1; /* Ensures the background is behind all content */
 }
 
 /* Header Styles */
@@ -51,15 +30,15 @@ header {
     position: fixed; /* Fixed at the top */
     width: 100%; /* Full width */
     top: 0;
-    z-index: 1000; /* Ensure header is above other content */
+    z-index: 1000; /* Ensures header is above other content */
 }
 
 /* Navigation Styles */
 nav ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none; /* Removes bullet points */
     padding: 0;
     display: flex; /* Horizontal layout */
-    justify-content: center; /* Center the navigation items */
+    justify-content: center; /* Centers navigation items */
 }
 
 nav ul li {
