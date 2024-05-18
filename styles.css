@@ -5,7 +5,7 @@ body, html {
     height: 100%; /* Ensures full viewport height */
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
     font-family: 'Roboto', sans-serif; /* Primary font */
-    background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+    background: radial-gradient(circle at 100%, #333, #444 50%, #555 75%, #333 75%);
     color: #f4f4f4; /* High contrast text color for readability */
 }
 
@@ -72,10 +72,15 @@ nav ul li a:hover {
 
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
+    body, html {
+        background: radial-gradient(circle at center, #333, #444 50%, #555 75%, #333 75%);
+    }
+
     nav ul {
         flex-direction: column;
         text-align: center;
     }
+
     nav ul li {
         padding: 10px 0; /* More padding for touch targets */
     }
