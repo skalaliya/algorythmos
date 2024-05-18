@@ -5,10 +5,14 @@ body, html {
     height: 100%; /* Ensures full viewport height */
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
     font-family: 'Roboto', sans-serif; /* Primary font */
-    background: radial-gradient(circle at 100%, #333, #444 50%, #555 75%, #333 75%);
+    background-color: #000000; /* Solid black background */
+    background-image: 
+        radial-gradient(circle at 100%, #333, #444 50%, #555 75%, #333 75%), /* Modified existing gradient */
+        radial-gradient(#ff4545 1.2px, transparent 1.2px); /* New pattern overlay */
+    background-size: cover, 24px 24px; /* Cover for the gradient, and 24px by 24px for the new pattern */
     color: #f4f4f4; /* High contrast text color for readability */
+    opacity: 1; /* Full opacity */
 }
-
 body::before {
     content: "";
     position: fixed;
